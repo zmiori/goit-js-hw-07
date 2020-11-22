@@ -30,8 +30,9 @@ galleryRef.classList.add('gallery');
 function insertImage(item) {
   const galleryItemRef = document.createElement('li');
   galleryItemRef.classList.add('gallery-item');
-  galleryItemRef.innerHTML = '<img>';
-  const imageRef = galleryItemRef.querySelector('img');
+
+  const imageRef = document.createElement('img');
+  galleryItemRef.appendChild(imageRef);
   imageRef.setAttribute('url', item.url);
   imageRef.setAttribute('alt', item.alt);
   imageRef.classList.add('gallery-image');
