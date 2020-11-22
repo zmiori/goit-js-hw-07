@@ -17,7 +17,8 @@ function isInputValid(event) {
   ) {
     validationInputRef.classList.add('invalid');
   } else {
-    validationInputRef.classList.replace('invalid', 'valid');
+    validationInputRef.classList.add('valid');
+    validationInputRef.classList.remove('invalid');
   }
 }
 
