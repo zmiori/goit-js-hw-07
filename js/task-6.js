@@ -13,7 +13,7 @@ console.log(validationInputRef.getAttribute('data-length'));
 
 function isInputValid(event) {
   if (
-    event.target.value.length >= validationInputRef.getAttribute('data-length')
+    event.target.value.length > validationInputRef.getAttribute('data-length')
   ) {
     validationInputRef.classList.add('invalid');
   } else {
